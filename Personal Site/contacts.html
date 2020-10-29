@@ -12,18 +12,13 @@
       <p><strong>Електронна пошта: </strong>
         splinter4234@gmail.com</p>
         <hr>
-        <form class="" action="6216326@stud.nau.edu.ua" method="post" enctype="text/plain">
-          <label for="">Ваше Ім'я:</label>
-          <input type="text" name="yourName" value="">
-          <br>
-          <label for="">Ваш Email:</label>
-          <input type="email" name="yourName" value="">
-          <br>
-          <label for="">Ваше повідомлення:</label>
-        <br>
-        <textarea name="yourMessage" rows="10" cols="30"></textarea>
-        <br>
-          <input type="submit" name="">
-        </form>
+        <form class="SendMail" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="type_name" value="Скрытое поле, здесь можно написать название формы или страницы, чтобы отличать разные формы">
+	<input type="text" name="Имя" placeholder="Имя">
+	<input type="email" name="email" placeholder="Почта">
+	<input type="file" name="file" value="Файл">
+	<button type="submit">Отправить сообщение</button>
+</form>
+        <script src="/vg/www/templates/modules/mail/js/mail.js"></script>
   </body>
 </html>
